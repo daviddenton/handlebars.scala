@@ -1,4 +1,4 @@
-*** THIS IS A FOR OF (https://github.com/mwunsch/handlebars.scala) ***
+*** THIS IS A FORK OF (https://github.com/mwunsch/handlebars.scala) ***
 
 A Scala implementation of [Handlebars](http://handlebarsjs.com/), an extension to and superset of the [Mustache](http://mustache.github.com/) templating language. Currently implements version [1.0.0](https://github.com/wycats/handlebars.js/tree/1.0.0) of the JavaScript version.
 
@@ -8,7 +8,8 @@ This project began as an attempt to learn Scala and to experiment with Scala's [
 
 If you're using SBT you can add this line to your build.sbt file.
 
-    libraryDependencies += "com.gilt" %% "handlebars-scala" % "2.1.1"
+    ~~libraryDependencies += "com.gilt" %% "handlebars-scala" % "2.1.1"~~
+    libraryDependencies += "com.github.daviddenton" %% "handlebars-scala-fork" % "2.2.1"
 
 ## Usage
 
