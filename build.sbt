@@ -24,7 +24,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.0" % "test"
 )
 
-licenses := Seq("BSD-style" -> url("http://www.opensource.org/licenses/bsd-license.php"))
+licenses := Seq("BSD" -> url("http://www.opensource.org/licenses/bsd-license.php"))
 
 pomExtra :=
   <url>http://{projectName}.github.io/</url>
