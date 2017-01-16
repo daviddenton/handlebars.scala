@@ -27,7 +27,7 @@ libraryDependencies ++= Seq(
 licenses := Seq("BSD" -> url("http://www.opensource.org/licenses/bsd-license.php"))
 
 pomExtra :=
-  <url>http://{projectName}.github.io/</url>
+    <url>https://github.com/mwunsch/handlebars.scala</url>
     <scm>
       <url>git@github.com:daviddenton/{projectName}.scala.git</url>
       <connection>scm:git:git@github.com:daviddenton/{projectName}.scala.git</connection>
@@ -60,10 +60,9 @@ pomExtra :=
         <url>http://timcharper.com/</url>
         <organization>Foundational Software</organization>
         <organizationUrl>http://www.foundationalsoftware.com</organizationUrl>
-      </developer>    </developers>
+      </developer>
+    </developers>
 
 credentials += Credentials(Path.userHome / ".sonatype" / ".credentials")
-
-homepage := Some(url("https://github.com/mwunsch/handlebars.scala"))
 
 Seq(bintraySettings: _*)
