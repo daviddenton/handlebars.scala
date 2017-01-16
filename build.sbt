@@ -35,7 +35,7 @@ pomExtra :=
     </scm>
     <developers>
       <developer>
-        <name>David Denton (forker</name>
+        <name>David Denton (fork owner)</name>
         <email>dev@fintrospect.io</email>
         <organization>{projectName}</organization>
         <organizationUrl>http://daviddenton.github.io</organizationUrl>
