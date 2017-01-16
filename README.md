@@ -1,3 +1,5 @@
+*** THIS IS A FOR OF (https://github.com/mwunsch/handlebars.scala) ***
+
 A Scala implementation of [Handlebars](http://handlebarsjs.com/), an extension to and superset of the [Mustache](http://mustache.github.com/) templating language. Currently implements version [1.0.0](https://github.com/wycats/handlebars.js/tree/1.0.0) of the JavaScript version.
 
 This project began as an attempt to learn Scala and to experiment with Scala's [Parser Combinators](http://www.scala-lang.org/api/current/index.html#scala.util.parsing.combinator.Parsers) in an attempt to get handlebars.js templates working in Scala.
