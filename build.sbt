@@ -1,13 +1,13 @@
 
 val orgName = "io.github.daviddenton"
 
-val projectName = "handlebars-scala"
+val projectName = "handlebars-scala-fork"
 
 organization := orgName
 
 name := projectName
 
-description := "handlebars-scala maintainence fork"
+description := "handlebars-scala maintenance fork"
 
 scalaVersion := "2.12.0"
 
