@@ -10,7 +10,7 @@ If you're using SBT you can add this line to your build.sbt file.
 
 ~~libraryDependencies += "com.gilt" %% "handlebars-scala" % "2.1.1"~~
 
-    libraryDependencies += "com.github.daviddenton" %% "handlebars-scala-fork" % "2.2.1"
+    libraryDependencies += "io.github.daviddenton" %% "handlebars-scala-fork" % "2.2.6"
 
 ## Usage
 
