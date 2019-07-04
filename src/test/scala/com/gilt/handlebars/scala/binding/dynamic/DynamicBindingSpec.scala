@@ -9,7 +9,7 @@ class DynamicBindingSpec extends FunSpec with Matchers {
     if (v == null) return "null"
     v match {
       case Some(a) => s"Some(${d(a)})"
-      case Unit => "Unit"
+      case () => "Unit"
       case a: String => "\"%s\"" format a
       case _ => v.toString
     }
@@ -20,7 +20,7 @@ class DynamicBindingSpec extends FunSpec with Matchers {
       (value, truthy) <- List(
         (null         , false),
         (None        -> false),
-        (Unit        -> false),
+        (()        -> false),
         (false       -> false),
         (List()      -> false),
         (""          -> true), // DynamicBinding behavior does not match JavaScript truth evaluation here; We may wish to revise?
@@ -38,7 +38,7 @@ class DynamicBindingSpec extends FunSpec with Matchers {
         (List()      -> ""),
         (null         , ""),
         (None        -> ""),
-        (Unit        -> ""),
+        (()        -> ""),
         (false       -> ""),
         (""          -> ""),
         (0           -> "0"),
@@ -80,7 +80,7 @@ class DynamicBindingSpec extends FunSpec with Matchers {
       (value, expectation) <- List(
         (null         , None),
         (None        -> None),
-        (Unit        -> None),
+        (()        -> None),
         (""          -> Some(DynamicBinding(""))),
         (List()      -> Some(DynamicBinding(List()))),
         (0           -> Some(DynamicBinding(0))),

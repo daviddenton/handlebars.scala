@@ -9,19 +9,19 @@ name := projectName
 
 description := "handlebars-scala maintenance fork"
 
-scalaVersion := "2.12.0"
+scalaVersion := "2.12.8"
 
-crossScalaVersions := Seq("2.12.0", "2.11.8")
+crossScalaVersions := Seq("2.12.8", "2.13.0")
 
 scalacOptions += "-deprecation"
 
 scalacOptions += "-feature"
 
 libraryDependencies ++= Seq(
-  "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.5",
+  "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2",
   "org.slf4j" % "slf4j-api" % "1.6.4",
   "org.slf4j" % "slf4j-simple" % "1.6.4" % "test",
-  "org.scalatest" %% "scalatest" % "3.0.0" % "test"
+  "org.scalatest" %% "scalatest" % "3.0.8" % "test"
 )
 
 licenses := Seq("BSD" -> url("http://www.opensource.org/licenses/bsd-license.php"))

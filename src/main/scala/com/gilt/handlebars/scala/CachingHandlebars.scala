@@ -35,7 +35,7 @@ object CachingHandlebars {
     helpers: Map[String, Helper[T]] = Map.empty[String, Helper[T]])(implicit contextFactory: BindingFactory[T]): Handlebars[T] = {
     if (file.exists()) {
       try {
-        val partials = PartialHelper.findAllPartials(file).mapValues(Handlebars(_))
+        val partials = PartialHelper.findAllPartials(file).mapValues(Handlebars(_)).toMap
         apply(Source.fromFile(file).mkString, partials, helpers, Some(file.getAbsolutePath))
       } catch {
         case ex: Exception => sys.error("Error while loading template\n%s".format(ex))
