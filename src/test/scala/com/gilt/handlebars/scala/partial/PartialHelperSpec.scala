@@ -41,8 +41,7 @@ class PartialHelperSpec extends FunSpec with Matchers {
         "partials/aPartial" -> "src/test/resources/partials/aPartial.handlebars",
         "partialWithinAPartial" -> "src/test/resources/partials/partialWithinAPartial.handlebars"
       )
-      val actual = partials.mapValues(_.getPath)
-
+      val actual = partials.mapValues(_.getPath).toMap
       actual should equal(expected)
     }
 
@@ -53,7 +52,7 @@ class PartialHelperSpec extends FunSpec with Matchers {
         "person" -> "src/test/resources/person.handlebars",
         "intermediate" -> "src/test/resources/intermediate.handlebars"
       )
-      val actual = partials.mapValues(_.getPath)
+      val actual = partials.mapValues(_.getPath).toMap
 
       actual should equal(expected)
     }

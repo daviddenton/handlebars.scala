@@ -46,13 +46,13 @@ class DynamicBinding(val data: Any) extends FullBinding[Any] with Loggable {
   def render = if (isTruthy) data.toString else ""
 
   def isTruthy = data match {
-    case /* UndefinedValue |*/ None | Unit | Nil | null | false => false
+    case /* UndefinedValue |*/ None | () | Nil | null | false => false
     case _: scala.runtime.BoxedUnit => false
     case _ => true
   }
   override def toString = s"DynamicBinding($data)"
   override def isDefined = data match {
-    case /* UndefinedValue |*/ None | Unit | null => false
+    case /* UndefinedValue |*/ None | () | null => false
     case _ => true
   }
 
